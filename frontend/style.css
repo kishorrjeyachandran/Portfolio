@@ -372,44 +372,41 @@ margin-right:7px;
 /* =========================
    PROJECTS
 ========================= */
-.project-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
-gap:30px;
-max-width:1200px;
-margin:auto;
-}
-
 .project-card{
-padding:26px;
+display:block;
+background:#74948C;
+padding:24px;
 border-radius:22px;
+text-decoration:none;
+color:white;
+transition:.3s;
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
 }
 
 .project-card:hover{
-transform:scale(0.90) translateY(-8px);
+transform:translateY(-10px) scale(1.02);
 background:#CA7C4C;
 }
 
+/* REMOVE link blue color */
+.project-card h4,
+.project-card p{
+color:white;
+text-decoration:none;
+}
 .project-card img{
 width:100%;
 aspect-ratio:16/9;
 object-fit:cover;
-border-radius:18px;
-margin-bottom:20px;
+border-radius:16px;
+margin-bottom:16px;
 }
-
-.project-card:hover img{
-transform:scale(1.15);
-}
-.project-card{
-padding:16px 16px 20px;
-}
-.project-card h4{
-font-size:20px;
-}
-
-.project-card p{
-font-size:15px;
+.project-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:28px;
+max-width:1100px;
+margin:auto;
 }
 /* =========================
    EDUCATION
